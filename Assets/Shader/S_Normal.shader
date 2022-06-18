@@ -1,4 +1,4 @@
- Shader "Study/PBR/Cloth"
+ Shader "Study/PBR/Normal_01"
 {
     Properties{
         _MainTex("MainTex",2D) = "White"{}
