@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+using Scripts;
 using UnityEditor;
 using UnityEngine;
 
-namespace MyScripts.Editor
+namespace EditorTools.Editor
 {
     public class MyCurveTool : EditorWindow
     {
@@ -27,7 +27,7 @@ namespace MyScripts.Editor
         void Update()
         {
             //_mDM.SetSegments(4);
-            Debug.Log("----------66666666666666666666666！----------");
+            //Debug.Log("----------66666666666666666666666！----------");
         }
 
         [MenuItem("Tools/自定义赛道工具")]

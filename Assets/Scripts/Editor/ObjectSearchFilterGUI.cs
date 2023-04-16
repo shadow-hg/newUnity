@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Scripts;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ using UnityEngine;
  * 时间 2023.04.13
  */
 
-namespace com.yoozoo.gta.Art.Editor
+namespace Editor
 {
     //[CustomEditor(typeof(ObjectSearchFilter))]
     public class ObjectSearchFilterGUI : EditorWindow
@@ -80,7 +81,7 @@ namespace com.yoozoo.gta.Art.Editor
         
         private bool _hasObj = false;
 
-        [MenuItem("HRP/物体批量筛选查找工具")]
+        [MenuItem("Tools/物体批量筛选查找工具")]
         public static void ShowWindow()
         {
             ObjectSearchFilterGUI window =
