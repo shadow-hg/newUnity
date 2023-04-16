@@ -1,0 +1,14 @@
+#pragma kernel ReadVertexBuffer
+
+RWStructuredBuffer<float3> _VerticesBuffer;
+
+int NumVertices;
+
+[numthreads(64, 1, 1)]
+void ReadVertexBuffer(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < NumVertices)
+    {
+        _VerticesBuffer[id.x] = _VerticesBuffer[id.x];
+    }
+}

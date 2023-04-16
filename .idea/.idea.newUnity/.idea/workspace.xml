@@ -5,33 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d74b6ff-36a4-4ad0-bb12-76e94472daae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/Custom_PBR.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/Custom_PBR.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/New Material 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/New Material 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/PBR.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/PBR.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/Unlit_point.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/Unlit_point.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/point.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/point.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Arts/point.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/shader/Custom_PBR.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/shader/Custom_PBR.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/shader/PBR.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/shader/PBR.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/000000000.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/000000000.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/NewComputeShader.compute" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/NewComputeShader.compute.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/ReadVertexBuffer.compute" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/ReadVertexBuffer.compute.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/Saidao.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/Saidao.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/Unlit_Saidao.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Arts/Effects/Unlit_Saidao.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Editor/MyCurveTool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Editor/MyCurveTool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Scripts/MyDynamicMesh.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Scripts/MyDynamicMesh.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/SimpleCameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/SimpleCameraController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/GlobalVolumeProfile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/GlobalVolumeProfile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/Volume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/Volume.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/VolumeProfileAsset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyScripts/Standard 1/VolumeProfileAsset.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +49,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5456dbfeccf644f7ab5b4d4a01ccf33e814a00/5e/3e37024c/MenuItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5456dbfeccf644f7ab5b4d4a01ccf33e814a00/e7/8f176cdc/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/08/8c2f879d/AddComponentMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/13/7f5b473d/Resources.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyScripts/Editor/MyCurveTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyScripts/Scripts/MyDynamicMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/Common.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/BRDF.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl" root0="SKIP_HIGHLIGHTING" />
@@ -165,6 +178,7 @@
       <workItem from="1679758796043" duration="364000" />
       <workItem from="1679759386946" duration="2236000" />
       <workItem from="1680188456531" duration="1609000" />
+      <workItem from="1680320100566" duration="27225000" />
     </task>
     <servers />
   </component>
