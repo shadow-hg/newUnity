@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_PBRTest
+  m_Name: Unlit_PBRTest 1
   m_Shader: {fileID: 4800000, guid: 16c1a06a92a26a24a8596f32a331f5e3, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -25,15 +25,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5ad5e017c9db44c43b6e8f3272e348f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 815f7a95a11ba8f4e8fa362f304664fc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 7b01ee1fd8aad894e9b4b74cc6023e97, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3598cc3c61a917446aa197947bed9441, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RMATex:
-        m_Texture: {fileID: 2800000, guid: dc3836e8e5925c54daaa27503edb8b72, type: 3}
+        m_Texture: {fileID: 2800000, guid: dbfa9225a10f2044097bac3f8eb28df3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -42,7 +42,7 @@ Material:
     - _Cull: 2
     - _Metallic: 1
     - _NormalScale: 1
-    - _Roughness: 0.481
+    - _Roughness: 0.29
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}

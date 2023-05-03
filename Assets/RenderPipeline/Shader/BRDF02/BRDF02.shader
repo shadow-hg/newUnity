@@ -28,7 +28,6 @@ Shader "Unlit/PBRTest"
             {
                 "RenderType"="Opaque" "Queue" = "Geometry"
             }
-            LOD 100
 
             Cull [_Cull]
 
@@ -37,6 +36,7 @@ Shader "Unlit/PBRTest"
             #pragma fragment frag
 
             #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl"
+            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl"
 
             struct appdata
             {
@@ -61,18 +61,39 @@ Shader "Unlit/PBRTest"
             sampler2D _RMATex;
             sampler2D _CubeMap;
             CBUFFER_START(UnityPerMaterial)
-            half4 _MainTex_ST;
-            half4 _NormalTex_ST;
-            half4 _RMATex_ST;
-            half4 _CubeMap_ST;
-            half4 _Color;
-            half4 _SpecularColor;
-            half _NormalScale;
-            half _Roughness;
-            half _Metallic;
-            half _AO;
+            float4 _MainTex_ST;
+            float4 _NormalTex_ST;
+            float4 _RMATex_ST;
+            float4 _CubeMap_ST;
+            float4 _Color;
+            float4 _SpecularColor;
+            float _NormalScale;
+            float _Roughness;
+            float _Metallic;
+            float _AO;
 
             CBUFFER_END
+
+            half3 BRDF_F(half3 F0,half LdotH)
+            {
+                half3 F1 = F0 + (1-F0) * pow(1-LdotH,5);
+                
+                return F1;
+            }
+            half BRDF_D_GGX(half roughness,half NdotH)
+            {
+                half roughness2 = roughness * roughness;
+                half DGGX = roughness2 / (PI * pow(pow(NdotH,2) * (pow(roughness2,2) - 1) +1,2));
+                return DGGX;
+            }
+            half BRDF_G(half roughness,half NdotV,half NdotL)
+            {
+                half k = pow(1+ roughness,2) / 8 ;
+                half G1 = NdotV / lerp(NdotV ,1, k);
+                half G2 = NdotL / lerp(NdotL ,1, k);
+                
+                return G1 * G2;
+            }
 
             v2f vert(appdata v)
             {
@@ -80,11 +101,11 @@ Shader "Unlit/PBRTest"
                 o.vertex = TransformObjectToHClip(v.vertex);
                 o.uv = v.uv;
 
-                float3 wldPos = normalize(TransformObjectToWorld(v.vertex));
-                float3 wldNormal = TransformObjectToWorldNormal(v.normal);
-                float3 wldTangent = TransformObjectToWorldDir(v.tangent);
+                float3 wldPos = TransformObjectToWorld(v.vertex);
+                half3 wldNormal = TransformObjectToWorldNormal(v.normal);
+                half3 wldTangent = TransformObjectToWorldDir(v.tangent);
 
-                float3 binWldTangent = cross(wldNormal,wldTangent) * v.tangent.w;
+                half3 binWldTangent = cross(wldNormal,wldTangent) * v.tangent.w*unity_WorldTransformParams.w;
 
                 o.T2W0 = float4(wldTangent,wldPos.x);
                 o.T2W1 = float4(binWldTangent,wldPos.y);
@@ -97,26 +118,36 @@ Shader "Unlit/PBRTest"
             {
                 //Sampler base texture
                 half4 diffuseTex = tex2D(_MainTex, i.uv);
-                clip(diffuseTex.a - 0.001);
+                //clip(diffuseTex.a - 0.001);
                 half4 RMATex = tex2D(_RMATex,i.uv);
-                half roughness = saturate(RMATex.r * _Roughness);
+                half smoothness = saturate(RMATex.r * _Roughness);
+                half roughness = pow(1-smoothness,2);
                 half metallic = saturate(RMATex.g * _Metallic);
                 half ao = saturate(RMATex.b * _AO);
-                half3 wldPos = normalize(half3(i.T2W0.w,i.T2W1.w,i.T2W2.w));
+                float3 wldPos = float3(i.T2W0.w,i.T2W1.w,i.T2W2.w);
 
                 //Sampler normal texture
                 half3 normalTex = UnpackNormal(tex2D(_NormalTex,i.uv));
                 normalTex.xy *= _NormalScale;
                 normalTex.z = sqrt(1-saturate(dot(normalTex.xy,normalTex.xy)));
-                normalTex = half3(dot(float3(i.T2W0.x,i.T2W1.x,i.T2W2.x),normalTex),dot(float3(i.T2W0.y,i.T2W1.y,i.T2W2.y),normalTex),dot(float3(i.T2W0.z,i.T2W1.z,i.T2W2.z),normalTex));
+                normalTex = float3(dot(float3(i.T2W0.x,i.T2W1.x,i.T2W2.x),normalTex),dot(float3(i.T2W0.y,i.T2W1.y,i.T2W2.y),normalTex),dot(float3(i.T2W0.z,i.T2W1.z,i.T2W2.z),normalTex));
+                normalTex = NormalizeNormalPerPixel(normalTex);
 
-                half viewDir = normalize(-_WorldSpaceCameraPos - wldPos);
-                half HalfV = normalize(_MainLightPosition + viewDir);
-                half NdotL = max(saturate(dot(normalTex,_MainLightPosition)),0.1 ) ;
-                half NdotV = max(dot(normalTex,viewDir),0);
-                half ref = reflect(-viewDir,normalTex);
+                float3 viewDir = SafeNormalize(_WorldSpaceCameraPos - wldPos);
+                float3 HalfV = normalize(viewDir + normalize(GetMainLight().direction) );
+                half NdotL = max(dot(normalTex,normalize(_MainLightPosition.xyz)),0.000001);
+                half NdotV = max(dot(normalTex,viewDir),0.000001);
+                half NdotH=max(saturate(dot(HalfV,normalTex)),0.000001);
+                half LdotH = max(dot(_MainLightPosition,HalfV),0.000001);
+                float3 ref = reflect(-viewDir,normalTex);
 
-                half3 finallColor = diffuseTex * NdotL;
+                half D = BRDF_D_GGX(roughness,NdotH);
+                half G = BRDF_G(roughness,NdotV,NdotL);
+                half3 F0 = lerp(float3(0.04,0.04,0.04),diffuseTex,metallic);
+                half3 F = BRDF_F(F0,LdotH);
+
+                half3 finallColor =(1 - F) * (1-metallic) * diffuseTex * _MainLightColor * NdotL + ((D*F*G)/(4*NdotV*NdotL)) * _MainLightColor * NdotL * PI;
+                finallColor *= ao;
 
                 return half4(finallColor,1);
             }
