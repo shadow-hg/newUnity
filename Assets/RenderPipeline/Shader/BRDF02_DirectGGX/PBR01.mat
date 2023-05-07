@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_PBRTest
+  m_Name: PBR01
   m_Shader: {fileID: 4800000, guid: 16c1a06a92a26a24a8596f32a331f5e3, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []

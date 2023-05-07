@@ -37,6 +37,7 @@ Shader "Unlit/PBRTest"
 
             #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl"
             #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl"
+            //#include "Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl"
 
             struct appdata
             {

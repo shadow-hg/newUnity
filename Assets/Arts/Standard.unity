@@ -290,9 +290,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1554481250099981867, guid: 24bd72648832109488bc57bec2f23745, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1554481250099981867, guid: 24bd72648832109488bc57bec2f23745, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1554481250099981867, guid: 24bd72648832109488bc57bec2f23745, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 086ac3a26127dd642b9dd3020aefdd64, type: 2}
+      objectReference: {fileID: 2100000, guid: 5951992f421d973478716db058bcdb85, type: 2}
+    - target: {fileID: -1554481250099981867, guid: 24bd72648832109488bc57bec2f23745, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5951992f421d973478716db058bcdb85, type: 2}
     - target: {fileID: 919132149155446097, guid: 24bd72648832109488bc57bec2f23745, type: 3}
       propertyPath: m_Name
       value: mesh_HERO41011_Goldbelt_H_1

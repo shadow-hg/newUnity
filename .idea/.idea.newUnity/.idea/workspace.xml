@@ -5,54 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d74b6ff-36a4-4ad0-bb12-76e94472daae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/GlobalVolumeProfile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/GlobalVolumeProfile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Volume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Volume.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/VolumeProfileAsset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/VolumeProfileAsset.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Standard 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Standard 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_Android.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectSearchFilter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectSearchFilter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/MyDynamicMesh.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/MyDynamicMesh.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/BRDF02.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/BRDF02.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PBR.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PBR.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PbrFunction.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PbrFunction.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,12 +57,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/08/8c2f879d/AddComponentMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/13/7f5b473d/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/dd/82636108/LODGroup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EditorScripts/LODTool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/Common.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/Macros.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/SpaceTransforms.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/BRDF.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/DBuffer.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Deprecated.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/RealtimeLights.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/ShaderVariablesFunctions.deprecated.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/ShaderVariablesFunctions.hlsl" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/ShaderVariablesFunctions.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/UnityInput.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Shaders/LitInput.hlsl" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -200,6 +195,11 @@
       <workItem from="1681656222878" duration="44000" />
       <workItem from="1681656466692" duration="19000" />
       <workItem from="1681656498494" duration="2312000" />
+      <workItem from="1682255012776" duration="600000" />
+      <workItem from="1683027083235" duration="4977000" />
+      <workItem from="1683095244236" duration="20766000" />
+      <workItem from="1683210440516" duration="1192000" />
+      <workItem from="1683297782173" duration="2896000" />
     </task>
     <servers />
   </component>
