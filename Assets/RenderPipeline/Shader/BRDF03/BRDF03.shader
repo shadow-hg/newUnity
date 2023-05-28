@@ -36,8 +36,8 @@ Shader "Unlit/PBRTest"
             #pragma fragment frag
             #define _CUSTOM_BRDF_FUNCTION
 
-            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl"
-            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl"
+            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/ShaderLibrary/Core.hlsl"
+            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/ShaderLibrary/Lighting.hlsl"
             #include "Assets/RenderPipeline/Common.hlsl"
 
             struct appdata

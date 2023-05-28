@@ -5,42 +5,395 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d74b6ff-36a4-4ad0-bb12-76e94472daae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.newUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/BRDF02.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/BRDF02.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PBR.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PBR.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PbrFunction.hlsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Test/PbrFunction.hlsl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02/Unlit_PBRTest.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/000000000.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/000000000.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Beard.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Beard.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Body.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Body.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Cloth.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Cloth.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Collar.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Collar.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Hair.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Materials/M_Hair.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Models/mesh_HERO41011_Goldbelt_H.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Models/mesh_HERO41011_Goldbelt_H.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Prefabs/TestRole.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Prefabs/TestRole.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Body_R.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/T_Cloth_R.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_d.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_d.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_m.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_m.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_n.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_cloth_n.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_d.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_d.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_n.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_n.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_s.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_face_s.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_hair_d.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_hair_d.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_hair_n.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Character/Role/Textures/tex_HERO41011_Goldbelt_hair_n.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/DefaultMaterial 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/DefaultMaterial 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Dither.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Dither/Custom_Dither.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Dither/Custom_Dither.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Dither/DitherScreenSpace.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Dither/DitherScreenSpace.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Effects/Unlit_Saidao.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Effects/Unlit_Saidao.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR/PBR01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR/PBR01/Custom_PBR.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR/PBR01/Custom_PBR.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR/PBR01/PBR.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PBR/PBR01/PBR.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Standard.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Standard.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Standard.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/Unlit_point.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/Unlit_point.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/point.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/point.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/point.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/point/point.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Common.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/ComputerShader/ReadVertexBuffer.compute.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/GlobalVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/GlobalVolumeProfile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/BRDF02.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Default.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR01.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/PBR02.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/New Material.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PBR.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF02_DirectGGX/Test/PbrFunction.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/BRDF03/BRDF03.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/Custom_PBR.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/Custom_PBR.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/PBR.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/PBR.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/PBR.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/PBR01/PBR.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/CustomRenderPassFeature.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/CustomRenderPassFeature.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/ColorChange.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/ColorChange.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/HLRenderPass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/HLRenderPass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/LearnRenderPassFeature.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/RenderFeature/New Folder/LearnRenderPassFeature.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Shader/Saidao/Saidao.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/Volume.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/Volume.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RenderPipeline/VolumeProfileAsset.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderPipeline/VolumeProfileAsset.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/GlobalVolumeProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/GlobalVolumeProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Volume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Volume.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/VolumeProfileAsset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/VolumeProfileAsset.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneLightingSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneLightingSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ObjectSearchFilterGUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/MyDynamicMesh.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/MyDynamicMesh.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/ObjectSearchFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/ObjectSearchFilter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/SimpleCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorScripts/SimpleCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/noise_3.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/noise_3.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/probability.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/probability.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/ConstructionLight_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/ConstructionLight_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/DryWallPainted_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/DryWallPainted_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/DryWall_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/DryWall_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Ground_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Ground_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Hammer_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Hammer_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/HardHat_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/HardHat_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Jigsaw_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Jigsaw_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/LightBulb_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/LightBulb_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Liquid_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Liquid_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Metal_Simple_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Metal_Simple_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/OBS_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/OBS_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Paint1G_WAnim_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Paint1G_WAnim_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/PaintBrush_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/PaintBrush_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/PaintLabel_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/PaintLabel_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Black_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Black_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Gray_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Gray_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Ridges_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Ridges_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Rough_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Rough_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_White_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_White_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Yellow_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Plastic_Yellow_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Strap_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Strap_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Stud_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Materials/Stud_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/ConstructionLight_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/ConstructionLight_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Stud.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Stud.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workbench.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workbench.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workbench_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workbench_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workshop_Set.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/Workshop_Set.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/brush_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/brush_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/hammer_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/hammer_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/jigsaw_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/jigsaw_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/magneticlevel_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/magneticlevel_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/paintbucket_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/paintbucket_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/safetygoggles_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/safetygoggles_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/safetyhat_low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/safetyhat_low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/small_plane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Models/small_plane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/ConstructionLightLow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/ConstructionLightLow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/PaintSupplies.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/PaintSupplies.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Props.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Props.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench_LOD0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench_LOD0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench_LOD1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/Workbench_LOD1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/WorkshopSet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Prefabs/WorkshopSet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Shaders/Paint1G_WAnim_Shader.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Shaders/Paint1G_WAnim_Shader.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Concrete/Ground_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_AlbedoSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_AlbedoSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Drywall/Drywall_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Metal/Metal_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Elastic_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Elastic_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Plastic_AlbedoSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Plastic_AlbedoSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Plastic_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Plastic/Plastic_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Construction_Light.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint5G_AlbedoSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paint5G_AlbedoSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/PaintAnimMask.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/PaintAnimMask.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/PaintLabel.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/PaintLabel.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/OBS_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/ExampleAssets/Textures/Wood/Plywood_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,24 +405,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5456dbfeccf644f7ab5b4d4a01ccf33e814a00/5e/3e37024c/MenuItem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5456dbfeccf644f7ab5b4d4a01ccf33e814a00/e7/8f176cdc/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/08/8c2f879d/AddComponentMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/13/7f5b473d/Resources.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d87da959c26443e0baa9578975afed03157c00/dd/82636108/LODGroup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/Common.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/Macros.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/ShaderLibrary/SpaceTransforms.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/BRDF.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/DBuffer.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Deprecated.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Lighting.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/RealtimeLights.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/ShaderVariablesFunctions.deprecated.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/ShaderVariablesFunctions.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/UnityInput.hlsl" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Shaders/LitInput.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/MyCurveTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyDynamicMesh.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,34 +420,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\zhg25\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\zhg25\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\zhg25\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\zhg25\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\zhg25\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\zhg25\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="独立播放器.Start Unity">
     <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Program Files\UnityEditor\2021.3.8f1c1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Program Files\UnityEditor\2021.3.23f1c1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath E:\Github\newUnity -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Github\newUnity" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -142,7 +479,7 @@
       <method v="2" />
     </configuration>
     <configuration name="单元测试(批处理模式)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Program Files\UnityEditor\2021.3.8f1c1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Program Files\UnityEditor\2021.3.23f1c1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\Github\newUnity -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Github\newUnity" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -200,6 +537,7 @@
       <workItem from="1683095244236" duration="20766000" />
       <workItem from="1683210440516" duration="1192000" />
       <workItem from="1683297782173" duration="2896000" />
+      <workItem from="1685258697489" duration="660000" />
     </task>
     <servers />
   </component>

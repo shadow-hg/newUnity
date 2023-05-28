@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Scripts;
 using UnityEditor;
 using UnityEngine;
-
 /*
  * 工具位置：Unity菜单栏：HRP/物体批量筛选查找工具
  * 作用：批量筛选物体
@@ -15,12 +14,7 @@ namespace Editor
     //[CustomEditor(typeof(ObjectSearchFilter))]
     public class ObjectSearchFilterGUI : EditorWindow
     {
-        [Header("最小值")] private int _minCount = 0;
-        [Header("最大值")] private int _maxCount = 4;
-        
-        [Header("该范围区间数量")] public int lowCountNum = 0;
-
-        private readonly List<string> _displayedOptions = new List<string>()
+        private readonly List<string> _displayedOptions = new List<string>
         {
             "顶点",
             "三角面",
@@ -30,62 +24,68 @@ namespace Editor
             "SRP Batching",
             "自定义Shader",
             "材质球",
-            "Mesh网格",
+            "Mesh网格"
         };
 
-        private readonly List<int> _displayedOptionsIndex = new List<int>()
+        private readonly List<int> _displayedOptionsIndex = new List<int>
         {
-            0, 1, 2, 3, 4, 5, 6, 7 ,8,
+            0, 1, 2, 3, 4, 5, 6, 7, 8
         };
+
+        private List<GameObject> _cacheObjs = new List<GameObject>();
+
+        private bool _hasObj = false;
+        [Header("最大值")] private int _maxCount = 4;
+        [Header("最小值")] private int _minCount;
+
+        private Vector2 _scrollViewVector = new Vector2(); //用于在面板展示大量搜索结果时，可以滑动列表查看结果
+
+        private Dictionary<string, Shader>
+            _shaderDictionary = new Dictionary<string, Shader>(); //用来存查找shader时预设的shader列表，对比防止重复添加
+
+        private SerializedObject _shaderObj;
+        private SerializedProperty _shaderPro;
+        private SerializedObject _spObj;
+        private SerializedProperty _spPro;
+
+        //存3种合批方式和1个自定义shader所需要的默认shadre文件的列表
+        public List<Shader> allShaders = new List<Shader>(); //搜索合批方式和自定义shader时，用来在面板显示预存的默认shader。
+        public Material customMaterial; //搜索的材质球
+        public Mesh customMesh; //搜索的网格
+
+        public Shader customShader; //搜索的自定义shader文件
+        public int displayIndexMax = 100;
+
+        //为防止搜索结果数量较大导致面板卡顿，所以设定好结果的显示范围：
+        public int displayIndexMin;
 
         //搜索逻辑脚本
         private ObjectSearchFilter glm;
+
+        [Header("该范围区间数量")] public int lowCountNum;
+
+        //场景的父节点，所有搜索基于这个节点的子集
+        public GameObject rootObject;
+        public List<GameObject> sceneLowMeshes = new List<GameObject>(); //搜索结果全存在这个列表里
+
+        //作为参数告诉文件搜索函数需要执行搜索顶点还是三角形或者是其他搜索函数
+        private int selectMenu;
+
         public ObjectSearchFilter GLM
         {
             get
             {
-                if (glm == null)
-                {
-                    glm = new ObjectSearchFilter();
-                }
+                if (glm == null) glm = new ObjectSearchFilter();
 
                 return glm;
             }
         }
 
-        //作为参数告诉文件搜索函数需要执行搜索顶点还是三角形或者是其他搜索函数
-        private int selectMenu = 0;
-
-        //场景的父节点，所有搜索基于这个节点的子集
-        public GameObject rootObject;
-        private SerializedObject _shaderObj;
-        private SerializedProperty _shaderPro;
-
-        //存3种合批方式和1个自定义shader所需要的默认shadre文件的列表
-        public List<Shader> allShaders = new List<Shader>();//搜索合批方式和自定义shader时，用来在面板显示预存的默认shader。
-        public List<GameObject> sceneLowMeshes = new List<GameObject>();//搜索结果全存在这个列表里
-        private SerializedObject _spObj;
-        private SerializedProperty _spPro;
-
-        private Vector2 _scrollViewVector = new Vector2();//用于在面板展示大量搜索结果时，可以滑动列表查看结果
-        private Dictionary<string, Shader> _shaderDictionary = new Dictionary<string, Shader>();//用来存查找shader时预设的shader列表，对比防止重复添加
-        
-        public Shader customShader;//搜索的自定义shader文件
-        public Material customMaterial;//搜索的材质球
-        public Mesh customMesh;//搜索的网格
-
-        //为防止搜索结果数量较大导致面板卡顿，所以设定好结果的显示范围：
-        public int displayIndexMin = 0;
-        public int displayIndexMax = 100;
-        private List<GameObject> _cacheObjs = new List<GameObject>();
-        
-        private bool _hasObj = false;
-
         [MenuItem("Tools/物体批量筛选查找工具")]
         public static void ShowWindow()
         {
-            ObjectSearchFilterGUI window =
-                (ObjectSearchFilterGUI) GetWindow(typeof(ObjectSearchFilterGUI));
+            var window =
+                (ObjectSearchFilterGUI)GetWindow(typeof(ObjectSearchFilterGUI));
             window.titleContent.text = "超级查找器";
             window.Show();
             window.Focus();
@@ -100,19 +100,16 @@ namespace Editor
             _shaderPro = _shaderObj.FindProperty("allShaders");
         }
 
-        void DisplayIndex()
+        private void DisplayIndex()
         {
             //将拿到的所有搜索结果按要显示在面板上的范围把结果传给最终显示的那个列表
             //if (displayIndexMin <= lowCountNum && displayIndexMax <= lowCountNum)
             {
                 sceneLowMeshes.Clear();
-                for (int i = displayIndexMin; i < displayIndexMax; i++)
-                {
-                    sceneLowMeshes.Add(_cacheObjs[i]);
-                }
+                for (int i = displayIndexMin; i < displayIndexMax; i++) sceneLowMeshes.Add(_cacheObjs[i]);
             }
         }
-        
+
         public void OnGUI()
         {
             GUILayout.Space(10);
@@ -135,12 +132,8 @@ namespace Editor
             {
                 GUILayout.Label("根据选择类型输入查找的数量范围：");
                 if (selectMenu == 2)
-                {
                     if (_minCount < 1)
-                    {
-                        EditorGUILayout.HelpBox("搜索SubMesh数量时 '最小值' 不能小于 '1' ",MessageType.Warning);
-                    }
-                }
+                        EditorGUILayout.HelpBox("搜索SubMesh数量时 '最小值' 不能小于 '1' ", MessageType.Warning);
 
                 _minCount = EditorGUILayout.IntField("最小值:", _minCount);
                 _maxCount = EditorGUILayout.IntField("最大值:", _maxCount);
@@ -165,13 +158,11 @@ namespace Editor
                         defaultShaderList.Add(Shader.Find("HRP/TA/GTA/Common/PBRRT(Dynamic)"));
 
                         foreach (var defaultShader in defaultShaderList)
-                        {
                             if (!_shaderDictionary.ContainsValue(defaultShader)) //结果是3时会反复执行，所以防止反复向列表添加这俩默认shader
                             {
                                 _shaderDictionary.Add(defaultShader.name, defaultShader);
                                 allShaders.Add(defaultShader);
                             }
-                        }
 
                         break;
                     case 4:
@@ -184,13 +175,11 @@ namespace Editor
                         defaultShaderList.Add(Shader.Find("HRP/TA/GTA/Common/PBRRTAlphaTest(Instance)"));
 
                         foreach (var defaultShader in defaultShaderList)
-                        {
                             if (!_shaderDictionary.ContainsValue(defaultShader)) //结果是4时会反复执行，所以防止反复向列表添加这俩默认shader
                             {
                                 _shaderDictionary.Add(defaultShader.name, defaultShader);
                                 allShaders.Add(defaultShader);
                             }
-                        }
 
                         break;
                     case 5:
@@ -202,13 +191,11 @@ namespace Editor
                         defaultShaderList.Add(Shader.Find("HRP/TA/GTA/Common/PBRRT(Mixed)"));
 
                         foreach (var defaultShader in defaultShaderList)
-                        {
                             if (!_shaderDictionary.ContainsValue(defaultShader)) //结果是5时会反复执行，所以防止反复向列表添加这俩默认shader
                             {
                                 _shaderDictionary.Add(defaultShader.name, defaultShader);
                                 allShaders.Add(defaultShader);
                             }
-                        }
 
                         break;
                 }
@@ -236,44 +223,30 @@ namespace Editor
             }
 
             if (selectMenu == 7)
-            {
-                customMaterial = EditorGUILayout.ObjectField("材质球:",customMaterial,typeof(Material),true) as Material;
-            }
-            
+                customMaterial =
+                    EditorGUILayout.ObjectField("材质球:", customMaterial, typeof(Material), true) as Material;
+
             if (selectMenu == 8)
-            {
-                customMesh = EditorGUILayout.ObjectField("网格Mesh:",customMesh,typeof(Mesh),true) as Mesh;
-            }
+                customMesh = EditorGUILayout.ObjectField("网格Mesh:", customMesh, typeof(Mesh), true) as Mesh;
 
             GUILayout.Space(8);
-            if (GUILayout.Button("超级查找器，启动！！",GUILayout.Height(24)))
+            if (GUILayout.Button("超级查找器，启动！！", GUILayout.Height(24)))
             {
                 if (rootObject == null)
                 {
                     UnityEngine.Debug.LogWarning("————————物体筛选工具：请指定场景父节点！————————");
                     return;
                 }
-                
-                if (selectMenu <= 6)
-                {
-                    GLM.BeginGetLowMesh(rootObject, _minCount, _maxCount, selectMenu, allShaders);
-                }
+
+                if (selectMenu <= 6) GLM.BeginGetLowMesh(rootObject, _minCount, _maxCount, selectMenu, allShaders);
 
                 if (selectMenu == 7)
-                {
                     if (customMaterial)
-                    {
-                        GLM.FindObjByMaterial(rootObject,customMaterial);
-                    }
-                }
-                
+                        GLM.FindObjByMaterial(rootObject, customMaterial);
+
                 if (selectMenu == 8)
-                {
                     if (customMesh)
-                    {
-                        GLM.FindObjByMesh(rootObject,customMesh);
-                    }
-                }
+                        GLM.FindObjByMesh(rootObject, customMesh);
 
                 if (GLM.lowCount.Count > 0 && GLM.lowCount != null)
                 {
@@ -288,12 +261,10 @@ namespace Editor
                 {
                     _hasObj = false;
                 }
-                
             }
 
             GUILayout.Space(8);
-            if (GUILayout.Button("清除列表",GUILayout.Height(24)))
-            {
+            if (GUILayout.Button("清除列表", GUILayout.Height(24)))
                 if (_cacheObjs.Count > 0)
                 {
                     _hasObj = false;
@@ -303,32 +274,27 @@ namespace Editor
                     _shaderDictionary.Clear();
                     GLM.ClearAll();
                 }
-            }
-            
+
             GUILayout.Space(8);
             GUILayout.Label(
                 "________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
             GUILayout.Space(8);
-            
+
             lowCountNum = GLM.lowCountNum;
 
             if (_cacheObjs.Count > 0)
             {
                 GUILayout.Label("为防止搜索结果数量过多导致卡顿，请根据索引值输入需要显示的范围：");
-                EditorGUILayout.HelpBox("筛选类型总数量 : " + lowCountNum,MessageType.Info);
-                displayIndexMin = EditorGUILayout.IntField("最小显示范围：",displayIndexMin);
-                displayIndexMax = EditorGUILayout.IntField("最大显示范围：",displayIndexMax);
-                if (displayIndexMin > lowCountNum || displayIndexMax > lowCountNum )
-                {
-                    EditorGUILayout.HelpBox("显示范围设置有误，范围值需要小于搜索结果的总数量！",MessageType.Error);
-                }
-                if (displayIndexMin > displayIndexMax )
-                {
-                    EditorGUILayout.HelpBox("显示范围设置有误，最大范围值需大于最小范围值！",MessageType.Error);
-                }
-                
-                if (GUILayout.Button("刷新列表",GUILayout.Height(24)))
+                EditorGUILayout.HelpBox("筛选类型总数量 : " + lowCountNum, MessageType.Info);
+                displayIndexMin = EditorGUILayout.IntField("最小显示范围：", displayIndexMin);
+                displayIndexMax = EditorGUILayout.IntField("最大显示范围：", displayIndexMax);
+                if (displayIndexMin > lowCountNum || displayIndexMax > lowCountNum)
+                    EditorGUILayout.HelpBox("显示范围设置有误，范围值需要小于搜索结果的总数量！", MessageType.Error);
+                if (displayIndexMin > displayIndexMax)
+                    EditorGUILayout.HelpBox("显示范围设置有误，最大范围值需大于最小范围值！", MessageType.Error);
+
+                if (GUILayout.Button("刷新列表", GUILayout.Height(24)))
                 {
                     if (displayIndexMin <= lowCountNum && displayIndexMax <= lowCountNum)
                     {
@@ -343,10 +309,7 @@ namespace Editor
                 }
             }
 
-            if (!_hasObj)
-            {
-                EditorGUILayout.HelpBox("未执行搜索操作，或当前搜索结果为空！",MessageType.Warning);
-            }
+            if (!_hasObj) EditorGUILayout.HelpBox("未执行搜索操作，或当前搜索结果为空！", MessageType.Warning);
             _scrollViewVector = EditorGUILayout.BeginScrollView(_scrollViewVector);
             EditorGUILayout.PropertyField(_spPro);
             EditorGUILayout.EndScrollView();
