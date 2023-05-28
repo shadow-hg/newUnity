@@ -37,7 +37,7 @@ Shader "Unlit/PBRTest"
 
             #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/ShaderLibrary/Core.hlsl"
             #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/ShaderLibrary/Lighting.hlsl"
-            //#include "Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl"
 
             struct appdata
             {
@@ -70,7 +70,7 @@ Shader "Unlit/PBRTest"
             float4 _SpecularColor;
             float _NormalScale;
             float _Roughness;
-            float _Metallic;
+            float _metallic;
             float _AO;
 
             CBUFFER_END
@@ -123,7 +123,7 @@ Shader "Unlit/PBRTest"
                 half4 RMATex = tex2D(_RMATex,i.uv);
                 half smoothness = saturate(RMATex.r * _Roughness);
                 half roughness = pow(1-smoothness,2);
-                half metallic = saturate(RMATex.g * _Metallic);
+                half metallic = saturate(RMATex.g * _metallic);
                 half ao = saturate(RMATex.b * _AO);
                 float3 wldPos = float3(i.T2W0.w,i.T2W1.w,i.T2W2.w);
 
@@ -147,7 +147,7 @@ Shader "Unlit/PBRTest"
                 half3 F0 = lerp(float3(0.04,0.04,0.04),diffuseTex,metallic);
                 half3 F = BRDF_F(F0,LdotH);
 
-                half3 finallColor =(1 - F) * (1-metallic) * diffuseTex * _MainLightColor * NdotL + ((D*F*G)/(4*NdotV*NdotL)) * _MainLightColor * NdotL * PI;
+                half3 finallColor =(1 - F) * (1-metallic) * diffuseTex  * NdotL + ((D*F*G)/(4*NdotV*NdotL)) *  NdotL * PI;
                 finallColor *= ao;
 
                 return half4(finallColor,1);

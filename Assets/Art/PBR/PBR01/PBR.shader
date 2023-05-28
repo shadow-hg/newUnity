@@ -9,7 +9,7 @@ Shader "Custom/PBR" {
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/ShaderLibrary/Core.hlsl"
+            #include "Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/ShaderLibrary/Core.hlsl"
             
             struct appdata {
                 float4 vertex : POSITION;
