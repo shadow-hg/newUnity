@@ -1,0 +1,9 @@
+Begin Object Class=/Script/Engine.Skeleton Name="SK_Ancient_Golem_Moving_Wheels_Skeleton" ExportPath="/Script/Engine.Skeleton'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_Skeleton.SK_Ancient_Golem_Moving_Wheels_Skeleton'"
+   Begin Object Class=/Script/Engine.AnimCurveMetaData Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_Skeleton.SK_Ancient_Golem_Moving_Wheels_Skeleton:AnimCurveMetaData_0'"
+   End Object
+   Begin Object Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_Skeleton.SK_Ancient_Golem_Moving_Wheels_Skeleton:AnimCurveMetaData_0'"
+   End Object
+   BoneTree(11)=()
+   PreviewSkeletalMesh="/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels.SK_Ancient_Golem_Moving_Wheels"
+   AssetUserData(0)="/Script/Engine.AnimCurveMetaData'AnimCurveMetaData_0'"
+End Object

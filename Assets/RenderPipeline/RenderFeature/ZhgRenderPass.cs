@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using OWL.Rendering.HRP;
@@ -5,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+[Obsolete("Obsolete")]
 public class ZhgRenderPass : ScriptableRenderPass
 {
     //标签名，用于FrameDebug中显示缓冲区名称

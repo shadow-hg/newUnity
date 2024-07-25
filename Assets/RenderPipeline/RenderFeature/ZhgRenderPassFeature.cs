@@ -57,7 +57,7 @@ public class ZhgRenderPassFeature : ScriptableRendererFeature
         }
 
         //获取当前渲染相机的目标颜色
-        var cameraColorTarget = renderer.cameraColorTarget;
+        var cameraColorTarget = renderer.cameraColorTargetHandle;
 
         //设置调用后处理pass
         _zhgPostPass.Setup(cameraColorTarget, _material, materialAnimations, materialProperties, enablePlay, animSpeed);

@@ -1,0 +1,108 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="SK_Ancient_Golem_Moving_Wheels_PhysicsAsset" ExportPath="/Script/Engine.PhysicsAsset'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset'"
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_5'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_1'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_2'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_3'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_4'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_5'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_6'"
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_0'"
+      DefaultInstance=(JointName="Disk",ConstraintBone1="Disk",ConstraintBone2="Base",Pos2=(X=0.000200,Y=0.159276,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_1'"
+      DefaultInstance=(JointName="Disk001",ConstraintBone1="Disk001",ConstraintBone2="Base",Pos2=(X=0.000200,Y=0.085735,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_2'"
+      DefaultInstance=(JointName="Disk002",ConstraintBone1="Disk002",ConstraintBone2="Base",Pos2=(X=0.000200,Y=0.012194,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_3'"
+      DefaultInstance=(JointName="Disk003",ConstraintBone1="Disk003",ConstraintBone2="Base",Pos2=(X=0.000200,Y=-0.061347,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_4'"
+      DefaultInstance=(JointName="Disk004",ConstraintBone1="Disk004",ConstraintBone2="Base",Pos2=(X=0.000200,Y=-0.134888,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:PhysicsConstraintTemplate_5'"
+      DefaultInstance=(JointName="Disk005",ConstraintBone1="Disk005",ConstraintBone2="Base",Pos2=(X=0.000200,Y=-0.208429,Z=1.379450),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Locked,Swing2Motion=ACM_Locked),TwistLimit=(TwistMotion=ACM_Locked)))
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_0'"
+      AggGeom=(SphylElems=((Center=(X=0.000472,Y=-0.099643,Z=0.780483),Rotation=(Pitch=9.148109,Yaw=-89.999992,Roll=-0.025654),Radius=0.660768,Length=1.321501)))
+      BoneName="Base"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_1'"
+      AggGeom=(SphylElems=((Center=(X=0.000000,Y=0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_2'"
+      AggGeom=(SphylElems=((Center=(X=0.000000,Y=-0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk001"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_3'"
+      AggGeom=(SphylElems=((Center=(X=0.000000,Y=-0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk002"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_4'"
+      AggGeom=(SphylElems=((Center=(X=0.000000,Y=-0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk003"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_5'"
+      AggGeom=(SphylElems=((Center=(X=-0.000000,Y=-0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk004"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels_PhysicsAsset.SK_Ancient_Golem_Moving_Wheels_PhysicsAsset:SkeletalBodySetup_6'"
+      AggGeom=(SphylElems=((Center=(X=0.000000,Y=0.000000,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999985,Roll=-89.999817),Radius=0.811788,Length=0.812040)))
+      BoneName="Disk005"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   PreviewSkeletalMesh="/Game/Ancient_Golem/Mesh/SK_Ancient_Golem_Moving_Wheels.SK_Ancient_Golem_Moving_Wheels"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   BoundsBodies(5)=5
+   BoundsBodies(6)=6
+   SkeletalBodySetups(0)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_0'"
+   SkeletalBodySetups(1)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_1'"
+   SkeletalBodySetups(2)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_2'"
+   SkeletalBodySetups(3)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_3'"
+   SkeletalBodySetups(4)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_4'"
+   SkeletalBodySetups(5)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_5'"
+   SkeletalBodySetups(6)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_6'"
+   ConstraintSetup(0)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_0'"
+   ConstraintSetup(1)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_1'"
+   ConstraintSetup(2)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_2'"
+   ConstraintSetup(3)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_3'"
+   ConstraintSetup(4)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_4'"
+   ConstraintSetup(5)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_5'"
+   SolverSettings=(CullDistance=1.000000,bUseLinearJointSolver=False)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+End Object

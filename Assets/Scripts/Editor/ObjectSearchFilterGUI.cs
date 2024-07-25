@@ -9,7 +9,7 @@ using UnityEngine;
  * 时间 2023.04.13
  */
 
-namespace Editor
+namespace Assets.Scripts.Editor
 {
     //[CustomEditor(typeof(ObjectSearchFilter))]
     public class ObjectSearchFilterGUI : EditorWindow
